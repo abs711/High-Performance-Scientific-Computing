@@ -1,0 +1,21 @@
+Starting parallel grid
+[n3288:37764:0:37764] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x191a120)
+[n3319:28200:0:28200] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1e04120)
+==== backtrace (tid:  37764) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x0000000000408bdb jacobi()  ???:0
+ 2 0x0000000000404e26 main()  ???:0
+ 3 0x00000000000234a3 __libc_start_main()  ???:0
+ 4 0x00000000004052fe _start()  ???:0
+=================================
+# elapsed time [mpigrid]: 22 ms
+# 128 iterations
+# ||r|| = 0.0475622
+==== backtrace (tid:  28200) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x0000000000408bdb jacobi()  ???:0
+ 2 0x0000000000404e26 main()  ???:0
+ 3 0x00000000000234a3 __libc_start_main()  ???:0
+ 4 0x00000000004052fe _start()  ???:0
+=================================
+Done with parallel grid

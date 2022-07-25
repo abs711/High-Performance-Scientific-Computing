@@ -1,0 +1,10 @@
+Starting parallel grid
+srun: Job step aborted: Waiting up to 12 seconds for job step to finish.
+slurmstepd: error: *** STEP 4698149.0 ON n3001 CANCELLED AT 2022-06-02T02:07:29 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 4698149 ON n3001 CANCELLED AT 2022-06-02T02:07:29 DUE TO TIME LIMIT ***
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 77830 RUNNING AT n3007
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================

@@ -1,0 +1,10 @@
+Starting parallel grid
+slurmstepd: error: *** STEP 4698030.0 ON n3288 CANCELLED AT 2022-06-02T01:49:27 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 4698030 ON n3288 CANCELLED AT 2022-06-02T01:49:27 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 12 seconds for job step to finish.
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 52432 RUNNING AT n3319
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================

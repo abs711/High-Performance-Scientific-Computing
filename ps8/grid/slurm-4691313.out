@@ -1,0 +1,37 @@
+Starting parallel grid
+# elapsed time [mpigrid]: 54 ms
+# 128 iterations
+[n3288:3962 :0:3962] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1d88000)
+[n3319:16476:0:16476] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x23a7000)
+[n3263:24700:0:24700] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xe72000)
+[n3250:52877:0:52877] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x12fc000)
+==== backtrace (tid:   3962) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x0000000000408610 mpi_dot()  ???:0
+ 2 0x0000000000404cfc main()  ???:0
+ 3 0x00000000000234a3 __libc_start_main()  ???:0
+ 4 0x00000000004052fe _start()  ???:0
+=================================
+==== backtrace (tid:  16476) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x0000000000408610 mpi_dot()  ???:0
+ 2 0x0000000000404cfc main()  ???:0
+ 3 0x00000000000234a3 __libc_start_main()  ???:0
+ 4 0x00000000004052fe _start()  ???:0
+=================================
+==== backtrace (tid:  24700) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x0000000000408610 mpi_dot()  ???:0
+ 2 0x0000000000404cfc main()  ???:0
+ 3 0x00000000000234a3 __libc_start_main()  ???:0
+ 4 0x00000000004052fe _start()  ???:0
+=================================
+# ||r|| = 0.0435485
+==== backtrace (tid:  52877) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x0000000000408610 mpi_dot()  ???:0
+ 2 0x0000000000404cfc main()  ???:0
+ 3 0x00000000000234a3 __libc_start_main()  ???:0
+ 4 0x00000000004052fe _start()  ???:0
+=================================
+Done with parallel grid

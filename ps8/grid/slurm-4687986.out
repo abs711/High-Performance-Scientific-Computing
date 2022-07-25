@@ -1,0 +1,156 @@
+Starting parallel grid
+[n3319:47053:0:47053] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xd60120)
+Parallel Yes
+maxiter 128
+xsize 128
+ysize 128
+With ir
+[n3288:51306:0:51306] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x2176120)
+==== backtrace (tid:  51306) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x000000000040929b mult()  ???:0
+ 2 0x0000000000409b06 ir()  ???:0
+ 3 0x0000000000404bdb main()  ???:0
+ 4 0x00000000000234a3 __libc_start_main()  ???:0
+ 5 0x00000000004052fe _start()  ???:0
+=================================
+==== backtrace (tid:  47053) ====
+ 0 0x0000000000012b30 .annobin_sigaction.c()  sigaction.c:0
+ 1 0x000000000040929b mult()  ???:0
+ 2 0x0000000000409b06 ir()  ???:0
+ 3 0x0000000000404bdb main()  ???:0
+ 4 0x00000000000234a3 __libc_start_main()  ???:0
+ 5 0x00000000004052fe _start()  ???:0
+=================================
+   0: ||r|| = inf
+   1: ||r|| = inf
+   2: ||r|| = inf
+   3: ||r|| = inf
+   4: ||r|| = inf
+   5: ||r|| = inf
+   6: ||r|| = inf
+   7: ||r|| = inf
+   8: ||r|| = inf
+   9: ||r|| = inf
+  10: ||r|| = inf
+  11: ||r|| = inf
+  12: ||r|| = inf
+  13: ||r|| = inf
+  14: ||r|| = inf
+  15: ||r|| = inf
+  16: ||r|| = inf
+  17: ||r|| = inf
+  18: ||r|| = inf
+  19: ||r|| = inf
+  20: ||r|| = inf
+  21: ||r|| = inf
+  22: ||r|| = inf
+  23: ||r|| = inf
+  24: ||r|| = inf
+  25: ||r|| = inf
+  26: ||r|| = inf
+  27: ||r|| = inf
+  28: ||r|| = inf
+  29: ||r|| = inf
+  30: ||r|| = inf
+  31: ||r|| = inf
+  32: ||r|| = inf
+  33: ||r|| = inf
+  34: ||r|| = inf
+  35: ||r|| = inf
+  36: ||r|| = inf
+  37: ||r|| = inf
+  38: ||r|| = inf
+  39: ||r|| = inf
+  40: ||r|| = inf
+  41: ||r|| = inf
+  42: ||r|| = inf
+  43: ||r|| = inf
+  44: ||r|| = inf
+  45: ||r|| = inf
+  46: ||r|| = inf
+  47: ||r|| = inf
+  48: ||r|| = inf
+  49: ||r|| = inf
+  50: ||r|| = inf
+  51: ||r|| = inf
+  52: ||r|| = inf
+  53: ||r|| = inf
+  54: ||r|| = inf
+  55: ||r|| = inf
+  56: ||r|| = inf
+  57: ||r|| = inf
+  58: ||r|| = inf
+  59: ||r|| = inf
+  60: ||r|| = inf
+  61: ||r|| = inf
+  62: ||r|| = inf
+  63: ||r|| = inf
+  64: ||r|| = inf
+  65: ||r|| = inf
+  66: ||r|| = inf
+  67: ||r|| = inf
+  68: ||r|| = inf
+  69: ||r|| = inf
+  70: ||r|| = inf
+  71: ||r|| = inf
+  72: ||r|| = inf
+  73: ||r|| = inf
+  74: ||r|| = inf
+  75: ||r|| = inf
+  76: ||r|| = inf
+  77: ||r|| = inf
+  78: ||r|| = inf
+  79: ||r|| = inf
+  80: ||r|| = inf
+  81: ||r|| = inf
+  82: ||r|| = inf
+  83: ||r|| = inf
+  84: ||r|| = inf
+  85: ||r|| = inf
+  86: ||r|| = inf
+  87: ||r|| = inf
+  88: ||r|| = inf
+  89: ||r|| = inf
+  90: ||r|| = inf
+  91: ||r|| = inf
+  92: ||r|| = inf
+  93: ||r|| = inf
+  94: ||r|| = inf
+  95: ||r|| = inf
+  96: ||r|| = inf
+  97: ||r|| = inf
+  98: ||r|| = inf
+  99: ||r|| = inf
+ 100: ||r|| = inf
+ 101: ||r|| = inf
+ 102: ||r|| = inf
+ 103: ||r|| = inf
+ 104: ||r|| = inf
+ 105: ||r|| = inf
+ 106: ||r|| = inf
+ 107: ||r|| = inf
+ 108: ||r|| = inf
+ 109: ||r|| = inf
+ 110: ||r|| = inf
+ 111: ||r|| = inf
+ 112: ||r|| = inf
+ 113: ||r|| = inf
+ 114: ||r|| = inf
+ 115: ||r|| = inf
+ 116: ||r|| = inf
+ 117: ||r|| = inf
+ 118: ||r|| = inf
+ 119: ||r|| = inf
+ 120: ||r|| = inf
+ 121: ||r|| = inf
+ 122: ||r|| = inf
+ 123: ||r|| = inf
+ 124: ||r|| = inf
+ 125: ||r|| = inf
+ 126: ||r|| = inf
+ 127: ||r|| = inf
+# elapsed time [mpigrid]: 24 ms
+# 128 iterations
+# ||r|| = inf
+Done with parallel grid
