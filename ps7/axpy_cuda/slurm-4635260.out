@@ -1,0 +1,27 @@
+/bin/rm -f omp_axpy.exe seq_axpy.exe  omp_axpy.o seq_axpy.o   amath583.o amath583IO.o amath583sparse.o cu_axpy_0.exe cu_axpy_1.exe cu_axpy_2.exe cu_axpy_3.exe cu_axpy_t.exe  cu_axpy_0.o cu_axpy_1.o cu_axpy_2.o cu_axpy_3.o cu_axpy_t.o omp_axpy.hpp.gch seq_axpy.hpp.gch amath583.hpp.gch amath583IO.hpp.gch amath583sparse.hpp.gch Matrix.s a.out *~ Makefile.bak makedep
+c++ -c  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  omp_axpy.cpp -o omp_axpy.o
+c++  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  omp_axpy.o -o omp_axpy.exe 
+c++ -c  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  seq_axpy.cpp -o seq_axpy.o
+c++  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  seq_axpy.o -o seq_axpy.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_0.cu -o cu_axpy_0.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_0.o -o cu_axpy_0.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_1.cu -o cu_axpy_1.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_1.o -o cu_axpy_1.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_2.cu -o cu_axpy_2.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_2.o -o cu_axpy_2.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_3.cu -o cu_axpy_3.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_3.o -o cu_axpy_3.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_t.cu -o cu_axpy_t.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_axpy_t.o -o cu_axpy_t.exe 
+
+=== cu_axpy_1 ===
+
+=== cu_axpy_2 ===
+
+=== cu_axpy_3 ===
+
+=== seq_axpy ===
+
+=== omp_axpy ===
+
+=== cu_axpy_t ===
