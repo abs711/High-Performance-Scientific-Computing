@@ -1,0 +1,4 @@
+# elapsed time [mpi_norm]: 1946 ms
+# msec_per norm [mpi_norm]: 13.4207
+# gflops / sec [mpi_norm]: 20.0016
+# | rho - sigma | = 3.30704e-14
