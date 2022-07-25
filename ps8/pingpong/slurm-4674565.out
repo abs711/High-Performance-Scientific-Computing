@@ -1,0 +1,11 @@
+3: sending  0
+3: received 0
+slurmstepd: error: *** STEP 4674565.0 ON g3031 CANCELLED AT 2022-05-30T20:18:35 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 12 seconds for job step to finish.
+slurmstepd: error: *** JOB 4674565 ON g3031 CANCELLED AT 2022-05-30T20:18:35 DUE TO TIME LIMIT ***
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 5047 RUNNING AT g3034
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
