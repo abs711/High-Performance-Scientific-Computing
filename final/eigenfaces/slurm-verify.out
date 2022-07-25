@@ -1,0 +1,79 @@
+#================================================================
+# slurm-4734717.out
+
+# Face size 55 x 45
+# Reading /gscratch/amath/amath583/data/celebA/celebA_gray_lowres.262781_55_45_32.bin
+# elapsed time [read_file]: 24 ms
+# elapsed time [compute_mean]: 1 ms
+# elapsed time [compute_shifted]: 0 ms
+# elapsed time [compute_covariance]: 7386 ms
+# Gflops/s = 0.829356
+# elapsed time [compute_svd]: 9618 ms
+
+
+#================================================================
+# slurm-4734809.out
+
+# Face size 55 x 45
+# Reading /gscratch/amath/amath583/data/celebA/celebA_gray_lowres.262781_55_45_32.bin
+# elapsed time [read_file]: 11 ms
+# elapsed time [compute_mean]: 1 ms
+# elapsed time [compute_shifted]: 0 ms
+# elapsed time [compute_covariance]: 2299 ms
+# Gflops/s = 2.66447
+# elapsed time [compute_svd]: 9529 ms
+
+
+#================================================================
+# slurm-4734810.out
+
+# Face size 55 x 45
+# Reading /gscratch/amath/amath583/data/celebA/celebA_gray_lowres.262781_55_45_32.bin
+# elapsed time [read_file]: 64 ms
+# elapsed time [compute_mean]: 1 ms
+# elapsed time [compute_shifted]: 0 ms
+# elapsed time [compute_covariance]: 238 ms
+# Gflops/s = 25.7379
+# elapsed time [compute_svd]: 1937 ms
+
+
+#================================================================
+# slurm-4734811.out
+
+# Face size 55 x 45
+# elapsed time [read_file]: 121 ms
+# elapsed time [scattering]: 9 ms
+# elapsed time [compute_mean]: 0 ms
+# elapsed time [compute_shifted]: 0 ms
+# elapsed time [reduce]: 61 ms
+# elapsed time [compute_covariance]: 353 ms
+# Gflops/s = 17.353
+# elapsed time [compute_svd]: 1711 ms
+
+
+#================================================================
+# slurm-4734812.out
+
+# Face size 55 x 45
+# Reading /gscratch/amath/amath583/data/celebA/celebA_gray_lowres.262781_55_45_32.bin
+# elapsed time [read_file]: 9 ms
+# elapsed time [compute_mean]: 0 ms
+# elapsed time [compute_shifted]: 0 ms
+# elapsed time [compute_covariance]: 256 ms
+# Gflops/s = 23.9282
+# elapsed time [compute_svd]: 1476 ms
+
+
+#================================================================
+# slurm-4734813.out
+
+# Face size 55 x 45
+# Reading /gscratch/amath/amath583/data/celebA/celebA_gray_lowres.262781_55_45_32.bin
+# elapsed time [read_file]: 8 ms
+# elapsed time [compute_mean]: 0 ms
+# elapsed time [compute_shifted]: 0 ms
+# elapsed time [compute_covariance]: 59 ms
+# Gflops/s = 103.824
+# elapsed time [compute_svd]: 1510 ms
+
+

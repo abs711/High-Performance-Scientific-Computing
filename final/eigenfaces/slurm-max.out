@@ -1,0 +1,13 @@
+#================================================================
+# slurm-4735082.out
+
+# Face size 109 x 89
+# elapsed time [read_file]: 14161 ms
+# elapsed time [scattering]: 11456 ms
+# elapsed time [compute_mean]: 245 ms
+# elapsed time [compute_shifted]: 176 ms
+# elapsed time [reduce]: 493 ms
+# elapsed time [compute_covariance]: 9642 ms
+# Gflops/s = 3954.88
+
+
