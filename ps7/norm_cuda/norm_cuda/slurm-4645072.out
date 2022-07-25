@@ -1,0 +1,30 @@
+/bin/rm -f norm_parfor.exe norm_seq.exe  norm_parfor.o norm_seq.o   amath583.o amath583IO.o amath583sparse.o norm_thrust.exe cu_norm_0.exe cu_norm_1.exe cu_norm_2.exe cu_norm_3.exe cu_norm_4.exe  norm_thrust.o cu_norm_0.o cu_norm_1.o cu_norm_2.o cu_norm_3.o cu_norm_4.o norm_parfor.hpp.gch norm_seq.hpp.gch amath583.hpp.gch amath583IO.hpp.gch amath583sparse.hpp.gch Matrix.s a.out *~ Makefile.bak makedep
+c++ -c  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  norm_parfor.cpp -o norm_parfor.o
+c++ -c  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  ../src/amath583.cpp -o amath583.o
+c++ -c  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  ../src/amath583IO.cpp -o amath583IO.o
+c++ -c  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  ../src/amath583sparse.cpp -o amath583sparse.o
+c++  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  norm_parfor.o amath583.o amath583IO.o amath583sparse.o -o norm_parfor.exe 
+c++ -c  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  norm_seq.cpp -o norm_seq.o
+c++  -fopenmp -Ofast -march=native -DNDEBUG   -std=c++14 -Wall  -I../include  norm_seq.o amath583.o amath583IO.o amath583sparse.o -o norm_seq.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  norm_thrust.cu -o norm_thrust.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  norm_thrust.o amath583.o amath583IO.o amath583sparse.o -o norm_thrust.exe  -lgomp
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_0.cu -o cu_norm_0.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_0.o -o cu_norm_0.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_1.cu -o cu_norm_1.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_1.o -o cu_norm_1.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_2.cu -o cu_norm_2.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_2.o -o cu_norm_2.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_3.cu -o cu_norm_3.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_3.o -o cu_norm_3.exe 
+nvcc -c -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_4.cu -o cu_norm_4.o
+nvcc -O3 -DNDEBUG  -I/sw/cuda/11.2.2//samples/common/inc --extended-lambda     -std=c++14 -I../include  cu_norm_4.o -o cu_norm_4.exe 
+
+=== cu_norm_0 ===
+
+=== cu_norm_1 ===
+
+=== cu_norm_2 ===
+
+=== cu_norm_3 ===
+
+=== cu_norm_4 ===
